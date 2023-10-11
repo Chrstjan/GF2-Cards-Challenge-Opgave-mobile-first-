@@ -1,0 +1,125 @@
+.container-main {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+dialog {
+    position: absolute;
+    top: 2;
+    z-index: 9;
+    width: 50vw;
+    background: var(--color-white);
+    animation: modalAnimation 1.5s;
+}
+
+dialog form {
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form input:invalid,
+form textarea:invalid {
+    outline: var(--color-danger) 2px solid;
+}
+
+form input {
+    padding: 0.5rem;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="reset"],
+form input[type="submit"] {
+    border: none;
+}
+
+form input[type="reset"]:hover,
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+form input[type="reset"] {
+    background: var(--color-medium);
+}
+
+form input[type="submit"] {
+    background: var(--color-blue);
+    color: #fff;
+}
+
+.cards-section {
+    padding: 1rem;
+}
+
+.card {
+    box-shadow: 3px 3px var(--color-medium);
+}
+
+.cards-section .card header {
+    background-color: var(--color-blue);
+    color: #fff;
+    padding: 1rem;
+}
+
+.card-text {
+    background: var(--color-white);
+}
+
+.card-text footer{
+    text-align: right;
+    background: var(--color-black);
+    padding: 0.7rem;
+}
+
+.card-text footer a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1rem;
+}
+
+/* Large devices */
+
+@media (min-width: 700px) {
+    .cards-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.2rem;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Tablet display */
+
+@media (min-width: 900px) {
+    .cards-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+    }
+}
+
+/* PC & Larger Screens */
+
+@media (min-width: 1300px) {
+    .cards-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}

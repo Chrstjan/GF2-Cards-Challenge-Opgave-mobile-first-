@@ -1,0 +1,13 @@
+@keyframes modalAnimation {
+   0% {
+    transform: translateX(-110%);
+   }
+
+   90% {
+    transform: translateX(2%);
+   }
+
+   100% {
+    transform: translateX(0%);
+   }
+}

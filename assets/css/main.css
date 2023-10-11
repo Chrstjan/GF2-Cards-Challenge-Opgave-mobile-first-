@@ -1,0 +1,25 @@
+@import url(header.css);
+@import url(main-content.css);
+@import url(animations.css);
+
+/* Importing the google font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+    --color-primary: #10a1d2;
+    --color-pink: #aa596C;
+    --color-green: #668979;
+    --color-blue: #657b99;
+    --color-white: #eaeaea;
+    --color-black: #444444;
+    --color-medium: #44444444; /* Transparent Color */
+    --color-red: #aa506c;
+    --color-danger: #ab563e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+    font-family: "Open sans", sans-serif;
+}

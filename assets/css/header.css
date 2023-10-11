@@ -1,0 +1,19 @@
+.main-header {
+    background-color: var(--color-pink);
+    color: #fff;
+    padding: 1rem;
+}
+
+.main-header hgroup {
+    padding-left: 0.5rem;
+}
+
+.cards-header-section {
+    background: var(--color-green);
+    color: #fff;
+    margin: 1rem;
+}
+
+.cards-header-section header hgroup{
+    padding: 0.5rem;
+}
